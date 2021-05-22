@@ -1,10 +1,9 @@
 import React from 'react'
+import "../css/footer.css"
 
 const Footer = () => {
     return (
-        <div>
-            <h1>Footer here</h1>
-
+        <div className="footer">
             <p>©Bashua Olafusika Vincent 2021.</p>
 
 

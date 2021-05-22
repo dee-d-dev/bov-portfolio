@@ -23,9 +23,9 @@ const Home = () => {
 
       <div className="intro">
         <h3>Hi, I'm Vincent.</h3>
-        <h3>
+        <h4>
           a <span>Chartered Accountant</span> and a <span> Photographer</span>
-        </h3>
+        </h4>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minima
