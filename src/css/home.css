@@ -1,0 +1,21 @@
+.intro span {
+    color: #06f;
+}
+
+.section{
+    display: flex;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.avatar{
+    width: 100%;
+    border-radius: 10rem;
+}
+
+.left, .right{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
