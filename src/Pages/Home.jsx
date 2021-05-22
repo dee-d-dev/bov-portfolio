@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import "../css/home.css";
 import Footer from "./Footer";
-import { gsap, Power3 } from "gsap";
+import { gsap, Power3, Power2 } from "gsap";
 import { TimelineLite } from "gsap/all";
 import { useEffect } from "react";
 
@@ -11,15 +11,25 @@ const Home = () => {
 
   useEffect(() => {
     t1.from(
-      ".left-img",
-      { x: -50, opacity: 0, ease: Power3.easeOut, delay: 0.3 },
+      ".left-img-1",
+      { x: -50, opacity: 0, duration: 2, ease: Power3.easeOut, delay: 0.3 },
+      "start"
+    ).from(
+      ".left-img-2",
+      { x: -50, opacity: 0, duration: 2, ease: Power3.easeOut, delay: 0.5 },
       "start"
     );
     t1.from(
-      ".right-img",
-      { x: 50, opacity: 0, ease: Power3.easeOut, delay: 0.5 },
+      ".right-img-1",
+      { x: 50, opacity: 0, duration: 2, ease: Power3.easeOut, delay: 0.6 },
+      "start"
+    ).from(
+      ".right-img-2",
+      { x: 50, opacity: 0, duration: 2, ease: Power3.easeOut, delay: 0.8 },
       "start"
     );
+
+    t1.from("avatar", { opacity: 1, ease: Power2.easeIn, delay: 0.1 }, "start");
   }, []);
 
   return (
@@ -31,13 +41,13 @@ const Home = () => {
             src="/icons/funds2.png"
             width="50px"
             alt=""
-            className="left-img"
+            className="left-img left-img-1"
           />
           <img
             src="/icons/photographer.png"
             width="40px"
             alt=""
-            className="left-img"
+            className="left-img left-img-2"
           />
         </div>
         <div className="img-container">
@@ -48,13 +58,13 @@ const Home = () => {
             src="/icons/funds.png"
             width="70px"
             alt=""
-            className="right-img"
+            className="right-img right-img-1"
           />
           <img
             src="/icons/photograph.png"
             width="70px"
             alt=""
-            className="right-img"
+            className="right-img right-img-2"
           />
         </div>
       </section>
