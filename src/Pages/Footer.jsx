@@ -3,14 +3,15 @@ import "../css/footer.css"
 
 const Footer = () => {
     return (
-        <div className="footer">
-            <p>©Bashua Olafusika Vincent 2021.</p>
+      <div className="footer">
+        <button class="btn">
+          <p>Send a message</p>
+        </button>
+        <p>bashuav@gmail.com</p>
 
-
-            <h3>Send me a message</h3>
-            <p>bashuav@gmail.com</p>
-        </div>
-    )
+        <p>©Bashua Olafusika Vincent 2021.</p>
+      </div>
+    );
 }
 
 export default Footer

@@ -2,29 +2,67 @@ import React from "react";
 import Header from "./Header";
 import "../css/home.css";
 import Footer from "./Footer";
+import { gsap, Power3 } from "gsap";
+import { TimelineLite } from "gsap/all";
+import { useEffect } from "react";
 
 const Home = () => {
+  let t1 = new TimelineLite({ delay: 0.2 });
+
+  useEffect(() => {
+    t1.from(
+      ".left-img",
+      { x: -50, opacity: 0, ease: Power3.easeOut, delay: 0.3 },
+      "start"
+    );
+    t1.from(
+      ".right-img",
+      { x: 50, opacity: 0, ease: Power3.easeOut, delay: 0.5 },
+      "start"
+    );
+  }, []);
+
   return (
     <div>
       <Header />
       <section className="section">
         <div className="left">
-          <img src="/icons/funds2.png" width="50px" alt="" />
-          <img src="/icons/photographer.png" width="40px" alt="" />
+          <img
+            src="/icons/funds2.png"
+            width="50px"
+            alt=""
+            className="left-img"
+          />
+          <img
+            src="/icons/photographer.png"
+            width="40px"
+            alt=""
+            className="left-img"
+          />
         </div>
         <div className="img-container">
           <img src="/images/home-img.jpg" className="avatar" alt="" />
         </div>
         <div className="right">
-          <img src="/icons/funds.png" width="70px" alt="" />
-          <img src="/icons/photograph.png" width="70px" alt="" />
+          <img
+            src="/icons/funds.png"
+            width="70px"
+            alt=""
+            className="right-img"
+          />
+          <img
+            src="/icons/photograph.png"
+            width="70px"
+            alt=""
+            className="right-img"
+          />
         </div>
       </section>
 
       <div className="intro">
-        <h3>Hi, I'm Vincent.</h3>
+        <h3 className="intro-head">Hi, I'm Vincent.</h3>
         <h4>
-          a <span>Chartered Accountant</span> and a <span> Photographer</span>
+          A <span>Chartered Accountant</span> and a <span> Photographer</span>
         </h4>
 
         <p>

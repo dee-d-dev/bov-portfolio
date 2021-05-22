@@ -1,3 +1,18 @@
-.footer p{
-    color: #747ea3
+
+.footer p {
+  color: #747ea3;
 }
+
+.btn {
+    background-color: #06f;
+    border: 0;
+    padding: 1rem 1.5rem;
+    border-radius: .4rem;
+}
+
+.btn p {
+    color: white;
+    font-family: 'roboto';
+    font-size: 1rem;
+}
+

@@ -1,8 +1,12 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 80%;
+  height: 100%;
   margin-top: 1rem;
+}
+
+.brand-name {
+  font-size: 1.5rem;
 }
 
 .nav-container {

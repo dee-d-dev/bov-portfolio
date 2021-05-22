@@ -1,22 +1,39 @@
-.intro span {
-    color: #06f;
+.intro {
+    margin-bottom: 5rem;
 }
 
-.section{
-    display: flex;
-    padding: 2rem 0;
+.intro p{
+    margin: 1rem 0;
+}
+
+.intro-head {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.intro span {
+  color: #06f;
+  font-size: 1.2rem;
+
+}
+
+.section {
+  display: flex;
+  padding: 2rem 0;
+  flex-grow: 1;
 }
 
 .img-container {
-    width: 100%;
+  width: 10rem;
+  margin: 0 1.2rem;
 }
 
-.avatar{
-    width: 100%;
-    border-radius: 10rem;
+.avatar {
+  width: 100%;
+  border-radius: 10rem;
 }
 
-.left, .right{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+.left,
+.right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
